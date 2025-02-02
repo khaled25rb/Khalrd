@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>بطاقة الحب والشعر</title>
+    <style>
+        @import url(https://fonts.googleapis.com/css?family=Poiret+One);
+
+        /* إعدادات عامة */
+        body {
+            font-family: 'Poiret One', Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            direction: rtl;
+            text-align: center;
+            background-color: #ddd;
+        }
+
+        /* تنسيق الأقسام */
+        .section {
+            width: 100%;
+            padding: 50px 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        /* القسم الأول: بطاقة الحب */
+        #card {
+            position: relative;
+            width: 90%;
+            max-width: 400px;
+            background: white;
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease-in-out;
+        }
+
+        #card:hover {
+            transform: scale(1.05);
+        }
+
+        #card h1 {
+            font-size: 24px;
+            color: #D32F2F;
+        }
+
+        /* تنسيق البطاقة الشعرية */
+        #poetry-card {
+            background: white;
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            text-align: center;
+            max-width: 400px;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        #poetry-card:hover {
+            transform: scale(1.05);
+        }
+
+        #poetry-card h1 {
+            color: #D32F2F;
+            font-size: 22px;
+            margin-bottom: 10px;
+        }
+
+        #poetry-card p {
+            font-size: 18px;
+            color: #333;
+            line-height: 1.8;
+        }
+
+        /* تصميم متجاوب */
+        @media (max-width: 768px) {
+            .section {
+                padding: 30px 15px;
+            }
+
+            #card, #poetry-card {
+                max-width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- القسم الأول: بطاقة الحب -->
+    <section class="section" id="section1">
+        <div id="card">
+            <h1>Valentine's Day Card</h1>
+            <div class="heart" id="heart1">
+                <div id="half1">
+                    <div id="circle"></div>
+                    <div id="rec"></div>
+                </div>
+                <div id="half2">
+                    <div id="circle"></div>
+                    <div id="rec"></div>
+                </div>
+            </div>
+            <div id="message">
+                <h2>I LOVE YOU, RANO</h2>
+            </div>
+            <div class="heart" id="heart2">
+                <div id="half1">
+                    <div id="circle"></div>
+                    <div id="rec"></div>
+                </div>
+                <div id="half2">
+                    <div id="circle"></div>
+                    <div id="rec"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- القسم الثاني: الشعر -->
+    <section class="section" id="section2">
+        <div id="poetry-card">
+            <h1>✦ كلماتي إليك ✦</h1>
+            <p>
+                وها أنا صارحتك ولم تقبلي<br>
+                اطمئني أن مسكنك في قلبي لا يأخذه أحد غيرك<br>
+                ولقد كنت رافضًا لفكرة الحب<br>
+                وكنتِ استثنائي الأول والأخير
+            </p>
+        </div>
+    </section>
+
+</body>
+</html>
